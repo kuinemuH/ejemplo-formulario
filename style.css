@@ -1,43 +1,43 @@
 /* FORMATO GENERAL DE LA PAGINA */
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    margin: 0; /* NADA DE MARGENES EN EL NAVEGADOR */
+    padding: 0; /* NADA DE ESPACIOS ENTRE EL NAVEGADOR Y EL DISEÑO */
+    box-sizing: border-box; /* hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
+    font-family: sans-serif; /* SE ESTABLECE FAMILIA DE FUENTES */
 }
 
 /* FORMATO PARA EL BODY */
 
 body{ 
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex; /* PROPIEDAD DE FLEX BOX QUE SI NO LA UTILIZAMOS NO SIRVEN LAS DEMAS LINEAS DE CODIGO DE AJUSTE DE ESTILO DEL BODY */
+    height: 100vh; /* LA ALTURA DEL ELEMENTO ES IGUAL AL 100% DE LA ALTURA DE LA VENTANA GRAFICA */
+    justify-content: center; /* ALINEA EN EL CENTRO LOS ELEMENTOS */
+    align-items: center;/* ALINEA AL MEDIO DE LA PANTALLA  */
+    padding: 10px; /* ESPACIO ENTRE LOS ELEMENTOS Y EL CONTENEDOR */
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); /* COLOR DEL FONDO CON GRADIENTE */
 }
 
 /* FORMATO INTERIOR DEL DIV GENERAL QUE CONTIENE TODO */
 
 .container{
-    max-width: 700px;
-    width: 100%; /*  */
+    max-width: 700px; /* TAMAÑO MAXIMO DEL CONTENEDOR DEL FORMULARIO */
+    width: 100%; /* ANCHO QUE VA A OCUPAR DENTRO DE SU TAMAÑO */
     background: #fff; /* COLOR DEL FONDO DEL FORMULARIO */
     padding: 25px 30px; /* ESPACIOS A LA DERECHA, IZQUIERDA, ARRIBA Y ABAJO */
     border-radius: 20px; /* REDONDEA LAS ESQUINAS DEL DIV CONTENEDOR DEL FORMULARIO */
 }
 
 .container .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
+    font-size: 25px; /* TAMAÑO DE LA FUENTE */
+    font-weight: 500; /* GROSSOR DE LA FUENTE */
+    position: relative; /* POSICION DE LA FUENTE, EN ESTE CASO SI NO LO PONEMOS QUEDARIA AL MEDIO */
 }
 
 .container .title::before{
-    content: '';
-    position: absolute;
-    left: 0;
+    content: ''; /* DEFINE QUE EL CONTENIDO VA A SER UN STRING DE TEXTO */
+    position: absolute; /* SE USA PARA LUEGO ESTABLECER LA POSICION EN LA QUE SE MUESTRA EL ELEMENTO DENTRO DE LA CAJA */
+    left: 0; 
     bottom: 0;
     height: 3px;
     width: 30px;
